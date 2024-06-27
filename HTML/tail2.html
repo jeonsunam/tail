@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/all.css" />
+    <link rel="stylesheet" href="../CSS/tail2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 500px;
+      }
+
+      .swiper-slide {
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        user-select: none;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .swiper-slide {
+        width: 70%;
+      }
+
+      .artist .swiper {
+        margin: 48px auto;
+        width: 800px;
+        height: 400px;
+      }
+
+      .artist .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      .artist .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .artist .swiper-slide:nth-child(1n) {
+        background-color: rgb(206, 17, 17);
+      }
+
+      .artist .swiper-slide:nth-child(2n) {
+        background-color: rgb(0, 140, 255);
+      }
+
+      .artist .swiper-slide:nth-child(3n) {
+        background-color: rgb(10, 184, 111);
+      }
+
+      .artist .swiper-slide:nth-child(4n) {
+        background-color: rgb(211, 122, 7);
+      }
+
+      .artist .swiper-slide:nth-child(5n) {
+        background-color: rgb(118, 163, 12);
+      }
+
+      .artist .swiper-slide:nth-child(6n) {
+        background-color: rgb(180, 10, 47);
+      }
+
+      .artist .swiper-slide:nth-child(7n) {
+        background-color: rgb(35, 99, 19);
+      }
+
+      .artist .swiper-slide:nth-child(8n) {
+        background-color: rgb(0, 68, 255);
+      }
+
+      .artist .swiper-slide:nth-child(9n) {
+        background-color: rgb(218, 12, 218);
+      }
+
+      .artist .swiper-slide:nth-child(10n) {
+        background-color: rgb(54, 94, 77);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header (상단) -->
+    <header>
+      <div class="topNav">
+        <p id="topTitle"><a href="./index2.html">Tail</a></p>
+        <div class="top">
+          <p class="topBorder">
+            <a class="t" href="./tail.html"
+              >White&nbsp;White&nbsp;White&nbsp;White&nbsp;White&nbsp;White&nbsp;White&nbsp;White&nbsp;White&nbsp;White&nbsp;White</a
+            >
+          </p>
+          <i class="icon"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"
+              />
+            </svg>
+          </i>
+        </div>
+      </div>
+      <div class="downNavWrap">
+        <ul class="downNav">
+          <li class="abc">
+            <a href="./project2.html" class="downNav1">Project</a>
+          </li>
+          <li class="abc">
+            <a href="./tail2.html" class="downNav1">Tail</a>
+            <div class="dropdown">
+              <p><a href="./tail2.html">Tail</a></p>
+              <p><a href="#">Live</a></p>
+              <p><a href="#">Artists</a></p>
+              <p><a href="#">Archive</a></p>
+            </div>
+          </li>
+          <li>
+            <a href="./party2.html" class="downNav1">PARTY</a>
+            <div class="dropdown">
+              <p><a href="#">RSVP</a></p>
+              <p><a href="#">Gallery</a></p>
+            </div>
+          </li>
+          <li>
+            <a href="./aboutTail2.html" class="downNav1">ABOUT TAIL</a>
+            <div class="dropdown">
+              <p><a href="#">Brand</a></p>
+              <p><a href="#">Product</a></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- main (중간) -->
+    <main>
+      <div class="mainContainer">
+        <div class="mainWrap">
+          <p>LIVE</p>
+          <!-- 동그라미 -->
+          <p>see all live</p>
+        </div>
+        <!-- 화살표 -->
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+        <div class="arrow">
+          <div class="sw btn1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="white"
+                d="m10.828 12l4.95 4.95l-1.414 1.415L8 12l6.364-6.364l1.414 1.414z"
+              />
+            </svg>
+          </div>
+          <div class="sw btn2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="white"
+                d="m10.828 12l4.95 4.95l-1.414 1.415L8 12l6.364-6.364l1.414 1.414z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/XsX3ATc3FbA?si=qPl1LOKBtjMJkTUG"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <div class="swiperText">
+              <p>방탄소년단</p>
+              <p>작은 것들을 위한 시</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/gdZLi9oWNZg?si=paV6jErzPEJeuMA_"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <div class="swiperText">
+              <p>방탄소년단</p>
+              <p>Dynamite</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/BVwAVbKYYeM?si=sIBH_hKqXT-uJ1Jc"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <div class="swiperText">
+              <p>방탄소년단</p>
+              <p>DOPE</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/kTlv5_Bs8aw?si=4ExoKxHzGCQROwj_"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <div class="swiperText">
+              <p>방탄소년단</p>
+              <p>MIC DROP</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/YPNpy-hg6yM?si=BPjGpzuUMDoTtg4r"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <div class="swiperText">
+              <p>방탄소년단</p>
+              <p>고민보다 GO</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/e6YP5IJt_SE?si=A-4xCM57wZbAXO9F"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <div class="swiperText">
+              <p>방탄소년단</p>
+              <p>Anpanman</p>
+            </div>
+          </div>
+          <!-- <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div> -->
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+
+      <!-- 방탄소년단 이미지 바꿔야함 나중에 -->
+      <div class="artist">
+        <div class="artistWrap">
+          <p>ARTISTS</p>
+          <div class="textBtnWrap">
+            <p id="t">see all artists</p>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbVtD6jDUGL6iMw5rsggcsHLLSXMYzYvNk_8Y9A27wkFd3ILI5"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVV1YjdvYZkK2A63pPCku8Sx6D82rVrEdMAHBxdSbU0Fhx2jzx"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpAGZSvCekdFi6ACRSh82HHWgYekimrfpxh-8TG-faEIKKn2a4"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThs9Fxr8xY4-vZ248G3bOZ_EiobfDRDDMV8fS8EQPCJO4hvdfz"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSny4PnXoYsvn0pbc8QDlr3TEcculK75Px4mbWh8chRwRRcOv4N"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBHO3tz3Y96BQKOFAkxCTOZuXW3ZaTf6iNUH-6fa3197cNj8cG"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcarRs85fsiSefZodfP9YAZBJFEjhg3n4GI_fPbMDgf5D2Msue"
+              />
+            </div>
+            <!-- <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- 보관소 -->
+      <div class="archive">
+        <p>ARCHIVE</p>
+        <div class="archiveWrap">
+          <div class="archiveBox first">
+            <h2 class="box title">Playlist & Mix</h2>
+            <p class="box text">
+              다양한 플레이리스트와 지금 한국에서 가장 뜨거운 디제이들의 믹스셋
+            </p>
+            <div class="box view">VIEW MORE</div>
+            <img src="../IMG/musiclist.jpg" />
+          </div>
+          <div class="archiveBox">
+            <h2 class="box title">Class & Creator Tips</h2>
+            <p class="box text">
+              현대 대중음악에 관한 모든 것과 아티스트가 직접 알려주는 창작 팁
+            </p>
+            <div class="box view">VIEW MORE</div>
+            <img src="../IMG/creater.jpg" />
+          </div>
+          <div class="archiveBox">
+            <h2 class="box title">Talk & Enterview</h2>
+            <p class="box text">STAR의 사적인 음악 취향과 진솔한 이야기들</p>
+            <div class="box view">VIEW MORE</div>
+            <img src="../IMG/인터뷰.png" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer (하단) -->
+    <footer>
+      <p class="footerTitle">Tail</p>
+      <div class="left">
+        <p class="info">개인정보 취급방침 | Terms and Conditions</p>
+        <p class="warning">
+          지나친 음주는 뇌졸중, 기억력 손상이나 치매를 유발합니다.
+        </p>
+        <p class="warning a">
+          임신 중 음주는 기형아 출생 위험을 높입니다. 만 19세 미만 컨텐츠 공유
+          금지.
+        </p>
+      </div>
+      <div class="right">
+        <h2 class="rightText">Tail</h2>
+        <div class="rightWrap">
+          <div class="imgWrap">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="white"
+                d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"
+              />
+            </svg>
+          </div>
+
+          <div class="imgWrap">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="white"
+                d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73"
+              />
+            </svg>
+          </div>
+
+          <div class="imgWrap">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="white"
+                d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"
+              />
+            </svg>
+          </div>
+
+          <div class="imgWrap">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="white"
+                d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <h2 class="rightDownText">Vodka</h2>
+        <div class="rightDownWrap">
+          <div class="imgWrap">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="white"
+                d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"
+              />
+            </svg>
+          </div>
+          <div class="imgWrap">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="white"
+                d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73"
+              />
+            </svg>
+          </div>
+
+          <div class="imgWrap">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="white"
+                d="M6.5 20q-2.275 0-3.887-1.575T1 14.575q0-1.95 1.175-3.475T5.25 9.15q.625-2.3 2.5-3.725T12 4q2.925 0 4.963 2.038T19 11q1.725.2 2.863 1.488T23 15.5q0 1.875-1.312 3.188T18.5 20z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="../JS/footer.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      // },
+      navigation: {
+        nextEl: ".btn2",
+        prevEl: ".btn1",
+      },
+    });
+
+    var swiper2 = new Swiper(".mySwiper2", {
+      grabCursor: true,
+      effect: "creative",
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      creativeEffect: {
+        prev: {
+          shadow: true,
+          translate: ["-120%", 0, -500],
+        },
+        next: {
+          shadow: true,
+          translate: ["120%", 0, -500],
+        },
+      },
+    });
+  </script>
+</html>

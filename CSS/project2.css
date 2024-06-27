@@ -1,0 +1,285 @@
+body {
+  background-color: #000;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  z-index: 9999;
+}
+
+#topTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  /* background-image: linear-gradient(to right, red 50%, blue 50%);
+  -webkit-background-clip: text;
+  color: transparent; */
+}
+
+.topNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.topBorder {
+  width: 100px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  /* white-space: nowrap; */
+}
+
+.t {
+  padding-left: 100%;
+  animation: tr 6s linear infinite;
+  color: #fff;
+}
+
+@keyframes tr {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200px);
+  }
+}
+
+.top {
+  display: flex;
+}
+
+.downNavWrap {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  padding: 16px;
+  background-color: #000;
+}
+
+.downNav {
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin: 0 auto;
+}
+
+.abc {
+  color: white;
+}
+
+.downNavWrap:hover {
+  border: none;
+}
+
+.downNav > li {
+  width: 200px;
+  text-align: center;
+}
+
+.downNav li:hover .downNav1,
+.downNav p:hover {
+  color: red;
+  font-weight: bold;
+}
+
+.downNav:hover .dropdown {
+  width: 100%;
+  height: 250px;
+  transition: all 1s ease;
+}
+
+.dropdown {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  text-align: center;
+  transition: all 1s ease;
+}
+
+.dropdown p {
+  margin-top: 2rem;
+}
+
+/* 중간 */
+main {
+  width: 100%;
+  height: 100%;
+}
+
+.project {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  color: #fff;
+}
+
+.project h2 {
+  font-size: 48px;
+}
+
+.project p {
+  font-size: 20px;
+}
+
+.projectWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 60px;
+}
+
+.more.ok {
+  display: none;
+}
+
+.more p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  border: 1px solid #fff;
+  width: 200px;
+  height: 70px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.imgWrapper {
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+
+.imgWrapper.show,
+.imgWrapper.show1,
+.imgWrapper.show2,
+.imgWrapper.show3,
+.imgWrapper.show4,
+.imgWrapper.show5,
+.imgWrapper.show6 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
+}
+
+.imgWrapper.show.up,
+.imgWrapper.show1.up1,
+.imgWrapper.show2.up2,
+.imgWrapper.show3.up3,
+.imgWrapper.show4.up4,
+.imgWrapper.show5.up5,
+.imgWrapper.show6.up6 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.imgWrapper.hidden {
+  height: 0;
+}
+
+.imgs {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imgsText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 24px;
+  font-size: 36px;
+  font-weight: bold;
+  user-select: none;
+}
+
+footer {
+  width: 100%;
+  height: 300px;
+  padding: 24px;
+  display: flex;
+  gap: 24px;
+  border-top: 1px solid #fff;
+}
+
+.footerTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.left {
+  width: 100%;
+}
+
+.info {
+  color: white;
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 48px;
+}
+
+.right {
+  width: 100%;
+}
+
+.rightText {
+  margin-bottom: 18px;
+  color: white;
+}
+
+.rightWrap {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.imgWrap {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.rightDownText {
+  color: white;
+  margin-bottom: 18px;
+}
+
+.rightDownWrap {
+  display: flex;
+  gap: 14px;
+}

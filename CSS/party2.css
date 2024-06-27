@@ -1,0 +1,256 @@
+body {
+  background-color: #000;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.swiperText p {
+  background-color: #000;
+  color: #fff;
+}
+
+.swiperText p:first-child {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+header {
+  width: 100%;
+  height: 110px;
+  position: relative;
+  z-index: 9999;
+}
+
+#topTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.topNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.topBorder {
+  width: 100px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+}
+
+.t {
+  padding-left: 100%;
+  animation: tr 6s linear infinite;
+}
+
+@keyframes tr {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200px);
+  }
+}
+
+.top {
+  display: flex;
+}
+
+.downNavWrap {
+  background-color: #000;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  padding: 16px;
+}
+
+.downNav {
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.downNavWrap:hover {
+  border: none;
+}
+
+.downNav > li {
+  width: 200px;
+  text-align: center;
+}
+
+.downNav li:hover .downNav1,
+.downNav p:hover {
+  color: red;
+  font-weight: bold;
+}
+
+.downNav:hover .dropdown {
+  width: 100%;
+  height: 200px;
+  transition: all 1s ease;
+}
+
+.dropdown {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  text-align: center;
+  transition: all 1s ease;
+}
+
+.dropdown p {
+  margin-top: 2rem;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  margin-bottom: 100px;
+  color: #fff;
+}
+
+.mainHigh {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainMiddle {
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+}
+
+.mainMiddle h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.mainMiddle p {
+  font-size: 20px;
+}
+
+.mainContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 7rem;
+  row-gap: 15rem;
+}
+
+.mainContent {
+  width: 400px;
+  height: 500px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.mainImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mainContent p {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+footer {
+  width: 100%;
+  height: 300px;
+  padding: 24px;
+  display: flex;
+  gap: 24px;
+}
+
+.footerTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.left {
+  width: 100%;
+}
+
+.info {
+  color: white;
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 48px;
+}
+
+.warning {
+  color: red;
+}
+
+.warning.a {
+  margin-top: 8px;
+}
+
+.right {
+  width: 100%;
+}
+
+.rightText {
+  margin-bottom: 18px;
+  color: white;
+}
+
+.rightWrap {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.imgWrap {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+.rightDownText {
+  color: white;
+  margin-bottom: 18px;
+}
+
+.rightDownWrap {
+  display: flex;
+  gap: 14px;
+}
